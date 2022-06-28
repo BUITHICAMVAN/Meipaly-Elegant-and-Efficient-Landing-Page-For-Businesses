@@ -1,0 +1,53 @@
+.parent {
+    width: 100%;
+    height: 400px;
+    background: black;
+}
+
+.child {
+    width: 100px;
+    height: 100px;
+    background: red;
+    /* animation-name: animate1, animate2;
+    animation-duration: 0.5s; */
+    /* animation-timing-function: 5; */
+    /* animation-iteration-count: infinite;
+    animation-delay: 1s; */
+/* 
+    animation: animate2 1s infinite; */
+
+    /* di chuyen theo chieu ngang sang phai */
+    transform: translateX(200px);
+}
+
+@keyframes animate1 {
+    from{
+        background-color: red;
+        width: 200px;
+        height:200px;
+    }
+
+    to {
+        background-color: blue;
+    }
+}
+
+@keyframes animate2{
+    0% {
+        background-color: red;
+    }
+
+    20% {
+        background-color: purple;
+    }
+    40% {
+        background-color: yellow;
+    }
+
+    40% {
+        background-color: green;
+    }
+    100% {
+        background-color: blue;
+    }
+}
